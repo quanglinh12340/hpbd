@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Icon của website -->
+    <link rel="shortcut icon" type="image/png" href="./birthdayCake.png" />
+    <title>Happy Birthday</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Wendy+One"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Dòng chữ Happy Birthday -->
+      <div class="balloon">
+        <div><span>H</span></div>
+        <div><span>A</span></div>
+        <div><span>P</span></div>
+        <div><span>P</span></div>
+        <div><span>Y</span></div>
+        <div><span>B</span></div>
+        <div><span>I</span></div>
+        <div><span>R</span></div>
+        <div><span>T</span></div>
+        <div><span>H</span></div>
+        <div><span>D</span></div>
+        <div><span>A</span></div>
+        <div><span>Y</span></div>
+      </div>
+      <div class="avatar">
+        <!-- Avatar của người bạn muốn gửi lời chúc -->
+        <img
+          src="./MyAvatar.jpg"
+          alt="Avatar"
+          class="avatar__img"
+          onclick="showMessage()"
+        />
+        <!-- Tên của người đó -->
+        <h1 onclick="showMessage()" class="avatar__title">Yến Duyên</h1>
+      </div>
+
+
+    <!-- SweetAlert library -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+      function showMessage() {
+        // Lời nhắn hiện ra khi bấm vào tên hoặc avatar
+        swal({
+          title: "Lời nhắn", // Tiêu đề của popup
+          text: "Nay là sinh nhật 21 tuối của bé mà anh hong được ở bên bé nên anh làm đỡ cái này :3. Chúc bé tuổi mới luôn mạnh khỏe học giỏi với lúc nào cũng yêu anh nhiều ", // Nội dung lời nhắn
+          button: {
+            text: "❤️️",
+          },
+        });
+      }
+
+      
+    </script>
+  </body>
+</html>
